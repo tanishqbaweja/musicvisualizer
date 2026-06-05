@@ -1,0 +1,7 @@
+librosa
+colorthief
+Pillow
+numpy
+moviepy
+tqdm
+scipy
