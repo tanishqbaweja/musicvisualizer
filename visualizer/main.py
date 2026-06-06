@@ -2,6 +2,13 @@ import argparse
 import sys
 import os
 
+# Add the parent directory of 'visualizer' to sys.path so we can import modules
+# when running main.py directly without setting PYTHONPATH.
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
+
 from visualizer.colors import extract_colors
 from visualizer.audio import analyze_audio
 from visualizer.renderer import prepare_background, render_frame
