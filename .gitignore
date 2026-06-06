@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+dummy.wav
+dummy.png
+test.mp4
+create_dummy_assets.py
